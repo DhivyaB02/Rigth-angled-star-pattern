@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main(void) {
+	// your code goes here
+	int i,j,num;
+	printf("Enter the no of rows:\n");
+	scanf("%d",&num);
+	// this first row used for number of rows
+	for(i=1;i<=num;i++)
+	{
+	    //prints spaces to less than one num
+	    for(j=i;j<num;j++)
+	    {
+	        printf(" ");
+	    }
+	    //prints * 
+	    for(j=1;j<=i;j++)
+	    {
+	    printf("*");
+	    }
+	    //after col. completion it goes for next line
+	    printf("\n");
+	}
+	return 0;
+}
+/*output will be
+    *
+   **
+  ***
+ ****
+*****   */
